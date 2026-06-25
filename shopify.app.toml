@@ -1,0 +1,25 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+client_id = "7d03eaa79bace3163d11bf4b371366a3"
+name = "preact-kp"
+application_url = "https://lambent-pastelito-111435.netlify.app"
+embedded = true
+
+[webhooks]
+api_version = "2026-04"
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "read_products"
+optional_scopes = [ ]
+use_legacy_install_flow = false
+
+[access.admin]
+embedded_app_direct_api_access = true
+direct_api_mode = "online"
+
+[auth]
+redirect_urls = [ ]
+
+[build]
+automatically_update_urls_on_dev = true
